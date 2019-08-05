@@ -16,7 +16,7 @@ def date_range(start_date, end_date):
     delta = timedelta(hours=1)
     full_dt_list = list()
     current_date = start_date
-    while current_date < end_date:
+    while current_date <= end_date:
         full_dt_list.append(current_date)
         current_date += delta
     return full_dt_list
